@@ -1,0 +1,8 @@
+services:
+  # Ton serveur central
+  ollama-server:
+    image: ollama/ollama
+    volumes:
+      - /media/meruem/BIWIN/.ollama:/root/.ollama
+    ports:
+      - "11434:11434"
